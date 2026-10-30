@@ -2,6 +2,8 @@
 
 A minimal Android TV application that adds an **HDMI 1** entry to the launcher and opens the first HDMI input when selected.
 
+It was originally created to make the **HDMI 1** input accessible from the **Zen Home** app, by providing an application entry that Zen Home can launch.
+
 It is intended for XGIMI projectors whose firmware exposes the DROIDLOGIC TV input provider. It was developed and tested on a device identified by ADB as `MiProjM05`.
 
 > **Compatibility notice**
