@@ -18,6 +18,12 @@ It is intended for XGIMI projectors whose firmware exposes the DROIDLOGIC TV inp
 - JDK 17
 - Gradle 8.9 (included through the Gradle Wrapper)
 
+## Download
+
+Users who do not want to build the project can download the APK from the [latest GitHub release](https://github.com/xzof/XgimiHDMI1/releases/latest).
+
+Releases currently contain a debug-signed APK. Android may require installation from unknown sources to be enabled for the app used to open the download. Do not install an APK from an untrusted fork or third-party mirror.
+
 ## Build
 
 Clone the repository and run:
@@ -57,6 +63,8 @@ After installation, launch **HDMI 1** from the Android TV launcher and press **O
 ## GitHub Actions
 
 Every push to `main` triggers the Android build. A successful run uploads the debug APK as the `XgimiHDMI1-debug-apk` artifact in the repository's **Actions** tab.
+
+Pushing a version tag such as `v1.0.0` also creates a GitHub Release and attaches the APK, so it can be downloaded directly from the **Releases** page.
 
 ## Project scope
 
