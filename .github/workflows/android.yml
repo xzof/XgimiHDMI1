@@ -56,8 +56,10 @@ jobs:
       - name: Create GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
         run: >-
           gh release create "$GITHUB_REF_NAME"
           "XgimiHDMI1-${GITHUB_REF_NAME}.apk"
           --title "XGIMI HDMI 1 $GITHUB_REF_NAME"
           --generate-notes
+          --verify-tag

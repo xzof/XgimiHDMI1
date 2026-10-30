@@ -42,21 +42,9 @@ On Windows, use `gradlew.bat :app:assembleDebug` instead.
 
 You can also open the project in Android Studio and let it synchronize Gradle.
 
-## Install with ADB
+## Installation
 
-Enable ADB debugging on the projector, connect it to your computer, then run:
-
-```sh
-adb devices
-adb install -r app/build/outputs/apk/debug/app-debug.apk
-```
-
-If ADB reports `INSTALL_FAILED_UPDATE_INCOMPATIBLE`, an installed version was signed with a different key. Remove it before installing the new one; this clears the app's local data:
-
-```sh
-adb uninstall fr.xgimi.hdmi1
-adb install app/build/outputs/apk/debug/app-debug.apk
-```
+Install the APK on your projector using your preferred method.
 
 After installation, launch **HDMI 1** from the Android TV launcher and press **OK** to switch to the input.
 
