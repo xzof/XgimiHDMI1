@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
         android:allowBackup="false"
+        android:icon="@drawable/ic_hdmi_input"
         android:label="HDMI 1"
         android:theme="@android:style/Theme.Material.NoActionBar">
         <activity
